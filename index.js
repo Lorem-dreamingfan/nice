@@ -4,7 +4,7 @@ const { readdirSync } = require(`fs`);
 const { join } = require(`path`);
 const db = require('quick.db');
 const { keep_alive } = require("./keep_alive");
-const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`./config.json`);
+const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`../config.json`);
 const figlet = require("figlet");
 const client = new Client({
   disableMentions: ``,
@@ -12,7 +12,7 @@ const client = new Client({
   restTimeOffset: 0
 
 });
-client.login('OTQ3MDQ0MjM4MzgwNjQyMzM1.YhnhrQ.EmPSE4zz_VaqBuczGc62c5Ad7HQ');
+client.login(TOKEN);
 client.commands = new Collection();
 client.prefix = PREFIX;
 client.queue = new Map();
