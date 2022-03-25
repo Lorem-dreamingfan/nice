@@ -5,7 +5,8 @@ const { join } = require(`path`);
 const db = require('quick.db');
 const { keep_alive } = require("./keep_alive");
 const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`./Config.json`);
-require('dotenv').config()
+const dotenv = require('dotenv')
+dotenv.config()
 const figlet = require("figlet");
 const client = new Client({
   disableMentions: ``,
